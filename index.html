@@ -45,12 +45,12 @@
 
         .diapositive img {
             width: 100%;
-            height: 80vh;
+            height: 100%;
             object-fit: cover;
             position: absolute;
-            animation: slide 40s infinite;
             opacity: 0;
             transition: opacity 1s;
+            animation: slide 40s infinite;
         }
 
         /* Animation to display each image for 10 seconds */
@@ -109,6 +109,7 @@
             display: none;
             margin: 20px auto;
             max-width: 800px;
+            text-align: center;
         }
 
         .content.active {
