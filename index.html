@@ -1,96 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115670198-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantidi.github.io</title>
+    <style>
+        /* Basic styling for the layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-  gtag('config', 'UA-115670198-2');
-</script>
+        /* Top navigation bar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-  <title>Thystere M. Bantidi</title>
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        /* Diapositive section */
+        .diapositive {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        .diapositive img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            position: absolute;
+            animation: slide 16s infinite;
+        }
 
-  <!-- Custom styles for this template -->
-  <link href="css/agency.min.css" rel="stylesheet">
+        /* Animation for images */
+        @keyframes slide {
+            0% {opacity: 1;}
+            25% {opacity: 0;}
+            50% {opacity: 1;}
+            75% {opacity: 0;}
+        }
 
+        /* Header text styling */
+        .header-text {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 10;
+            color: white;
+        }
 
+        .header-text h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .header-text h1 span {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .header-text h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .cv-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: yellow;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Content sections */
+        .content {
+            padding: 20px;
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
+<body>
 
-<body id="page-top">
+    <!-- Navigation bar -->
+    <nav>
+        <a href="#" onclick="showSection('home')">Bantidi.github.io</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('research')">Research</a>
+        <a href="#" onclick="showSection('publications')">Publications</a>
+        <a href="#" onclick="showSection('presentation')">Presentation</a>
+        <a href="#" onclick="showSection('gallery')">Gallery</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+        <a href="#" onclick="showSection('cv')">My CV</a>
+    </nav>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Bantidi.github.io</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#research">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#presentations">Presentations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-		  <li class="nav-item">
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="research-papers/Bantidi_CV.pdf" target = "_blank">My CV</a>
-          </li>
-        </ul>
-      </div>
+    <!-- Diapositive section with text overlay -->
+    <div class="diapositive">
+        <img src="img/SanAndrea1.png" alt="SanAndrea1">
+        <img src="img/Triggeringdistance.png" alt="Triggeringdistance">
+        <img src="img/DAS2.jpeg" alt="DAS2">
+        <img src="img/Lisbon.png" alt="Lisbon">
+
+        <div class="header-text">
+            <h1><span>Thystere M. Bantidi</span></h1>
+            <h2>Geophysicist</h2>
+            <a href="#" class="cv-button">View CV</a>
+        </div>
     </div>
-  </nav>
-  
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-      <!-- <div class="intro-heading ">Jamie <span style="background-color: #fed136"><a href="#" data-toggle="tooltip" data-placement="right" title="/'fɑː(r)kəsən/">Farquharson </a></span></div>-->
-       <!-- <div class="intro-heading ">Jamie <span style="background-color: #fed136">Farquharson </span></div>-->
 
-        <div class="intro-heading ">Thystere <a href="#" data-toggle="tooltip" data-placement="right" title="/'fɑː(r)kəsən/">Bantidi</a></div>
-
-        <!--<h2 class="section-heading text-lowercase">/'fɑː(r)kəsən/</h2>-->
-        <div class="intro-lead-in">Geophysicist</div>
-        <p></p>
-        <!--<div class="intro-heading text-lowercase">/'fɑː(r)kəsən/</div>-->
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Tell Me More</a>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="research-papers/Bantidi_CV.pdf" target = "_blank">My CV</a>
-      </div>
+    <!-- Content sections -->
+    <div id="home" class="content active">
+        <h2>Welcome to My Website</h2>
+        <p>This is a website about my work as a Geophysicist...</p>
     </div>
-  </header>
 
   <!-- About -->
   <section class="page-section" id="about">
@@ -800,11 +853,33 @@ Ishibe, T., T. Terakawa, A. Hashima, <b>T.M. Bantidi<b>, M. Mochizuki, R.S. Mats
   </script>
 <!--</div>-->
 
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+  <!-- Footer -->
+    <footer>
+        &copy; 2024 Thystere M. Bantidi
+    </footer>
+
+    <!-- Script for navigation -->
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.content');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Diapositive image loop logic
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.diapositive img');
+        setInterval(() => {
+            images.forEach((img, index) => {
+                img.style.opacity = index === currentImageIndex ? '1' : '0';
+            });
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }, 4000);
+    </script>
 
 </body>
-
 </html>
 <!--<form id="contactForm" name="sentMessage" novalidate="novalidate">
   <div class="row">
