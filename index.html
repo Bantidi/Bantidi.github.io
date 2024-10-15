@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantidi's Website</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #f4c542;
+        }
+
+        /* Welcome text */
+        .welcome-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .welcome-text h1 {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .welcome-text h1 span.white {
+            color: white;
+        }
+
+        .welcome-text h1 span.yellow {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: none;
+        }
+
+        .slideshow-container img.active {
+            display: block;
+        }
+
+        /* Sections for content */
+        section {
+            text-align: center;
+            margin: 50px 0;
+        }
+		
+		
+
+    </style>
+	.fill {object-fit: fill;}
+	.contain {object-fit: contain;}
+	.cover {object-fit: cover;}
+	.scale-down {object-fit: scale-down;}
+	.none {object-fit: none;}
+	</style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Bantidi.github.io</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#cv">My CV</a>
+    </nav>
+
+    
+	<!-- Slideshow -->
+    <div class="slideshow-container">
+        <img src="img/SanAndrea1.png" alt="SanAndrea1" class="active">
+        <img src="img/Triggeringdistance.png" alt="Triggeringdistance" style="width:400px;height:200px">
+        <img src="img/DAS2.png" alt="DAS2">
+        <img src="img/Lisbon.png" alt="Lisbon" style="width:400px;height:200px">
+		
+		
+    </div>
+
+    
+	
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p class="text-muted" align="justify"> I am Thystere Matondo BANTIDI, a Research Associate at <a href="https://www.adep.jp/" target = "blank">Association for the Development of Earthquake Prediction (ADEP)</a>, Tokyo, Japan. Before joining ADEP, I was a postdoctoral fellow at <a href="https://www.aob.gp.tohoku.ac.jp/aob-e/" target = "blank">Research Center for Prediction of Earthquakes and Volcanic Eruptions</a>, Tohoku University, Sendai, Japan, under the supervision of Prof. Satoshi Miura and Associate Prof. Mare Yamamoto. I received my Ph.D. in Geophysics from <a href="https://www.gp.tohoku.ac.jp/zisin/index_en.html" target = "blank">Tohoku University (Solid Earth Physics Laboratory, Department of Geophysics, Graduate School of Science)</a>, Sendai, Japan, under the supervision of Prof. Takeshi Nishimura and a B.S. in Physics from  the University of Kinshasa, DR Congo. My general research interest surrounds the probabilities of occurrence and precursory warnings of natural hazards, with an emphasis on earthquakes, tsunamis, and volcanoes. My primary research interest is on the characteristics of the triggering and occurrence probability of large earthquakes and the intensity of hazardous ground motions. Indeed, earthquake predictability, the degree to which the future occurrence of earthquakes can be determined from observable behavior, has proven elusive. This lack of understanding is the gap in our knowledge that I am hoping to fill with my research. I ension that my results could help reduce earthquake losses by improving community preparedness and resilience.
+        </p>
+
+        <h3>Education and Experience</h3>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <img src="img/about/unikin.png" alt="unikin Logo" width="50">
+                <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2005/10&ndash;2011/3</h4>
+                  <h4 class="subheading">University of Kinshasa, D.R. Congo</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">B.Sc. Physics</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <img src="img/about/unikin.png" alt="unikin Logo" width="50">
+                <div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4>2011/4&ndash;2016/3</h4>
+						<h4 class="subheading">University of Kinshasa, D.R. Congo</h4>
+                    </div>
+                    <div class="timeline-body">
+						<p class="text-muted">Teaching and Research Assistant</p>
+                    </div>
+                </div>
+			</div>
+			<div class="timeline-item">
+                <img src="img/about/Tohokudai.png" alt="Tohokudai Logo" width="50">
+                <div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4>2016&ndash;2018</h4>
+                          <h4 class="subheading">Tohoku University, Japan </h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p class="text-muted">M.Sc. Geophysics</p>
+                    </div>
+                </div>
+			</div>
+			<div class="timeline-item">
+                <img src="img/about/Tohokudai.png" alt="Tohokudai Logo" width="50">
+                <div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4>2018&ndash;2021</h4>
+                          <h4 class="subheading">Tohoku University, Japan</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p class="text-muted">Ph.D. Geophysics</p>
+                    </div>
+                </div>
+			</div>
+			<div class="timeline-item">
+                <img src="img/about/Tohokudai.png" alt="Tohokudai Logo" width="50">
+                <div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4>2021&ndash;2022</h4>
+                          <h4 class="subheading">Tohoku University, Japan</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p class="text-muted">Postdoctoral fellow</p>
+                    </div>
+                </div>
+			</div>
+			<div class="timeline-item">
+                <img src="img/about/adep.jpg" alt="adep Logo" width="50">
+                <div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4>2022&ndash;</h4>
+                          <h4 class="subheading">Association for the Development of Earthquake Prediction (ADEP), Tokyo, Japan </h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p class="text-muted">Research Associate
+                    </div>
+                </div>
+			</div>
+            <!-- Continue as needed -->
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+        <h2>Research</h2>
+
+        <div class="portfolio-caption">
+            <h3>Seismicity, earthquake triggering and interaction</h3>
+            <img src="img/portfolio/Triggeringdistance.png" alt="Seismicity, earthquake triggering and interaction">
+            <p>Seismicity measures the occurrence frequency of earthquakes in space, time, and magnitude. While earthquake triggering refers to the process by which earthquakes nucleate, the interactions involved in this process, and the resulting consequences for time-dependent hazards. By combining physics-based models (e.g., rate and state friction law) with statistical earthquake models (e.g., the Epidemic Type Aftershock Sequence (ETAS) model), we can achieve more accurate forecasts for earthquake probabilities in both space and time.</p>
+            <a href="#" class="blue-btn">Learn More</a>
+        </div>
+		<br>
+
+        <div>
+            <h3>Volcanoes and earthquakes interation, Eruption probability</h3>
+            <img src="img/portfolio/Nyiragongo.png" alt="Volcanoes and earthquakes interation, Eruption probability">
+            <p>When considering the probability of volcanic eruptions, one should acknowledge that these events are represented by a stochastic time series, meaning that eruptions can be viewed as a random variable indexed in time. The alternative is a deterministic model, characterized by no randomness in its parameters. Theoretically, by completely specifying a deterministic model, events could be predicted at any point in the future. However, such models seem unachievable in natural systems. Since volcanic processes are inherently random, a sequence of volcanic events can only be treated as a stochastic time series and modeled by fitting statistical distributions, leading to probabilistic estimates of variables such as repose times (or interevent times).</p>
+            <a href="#" class="blue-btn">Learn More</a>
+        </div>
+		<br>
+		
+
+		<div>
+            <h3>Tsunami inundation prediction</h3>
+            <img src="img/portfolio/Tsunami.gif" alt="Tsunami inundation prediction">
+            <p>Simulating tsunami heights generated by massive earthquakes and the time it takes to reach the coasts can save lives. We develop methods to analyze potential scenarios of megathrust earthquakes and the tsunamis that may result from them.</p>
+            <a href="#" class="blue-btn">Learn More</a>
+        </div>
+		<br>
+		
+		<div>
+            <h3>Machine learning</h3>
+            <img src="img/portfolio/xxx.png" alt="Machine learning">
+            <p>Machine learning.</p>
+            <a href="#" class="blue-btn">Learn More</a>
+        </div>
+		<br>
+
+        <!-- Add more sections for Tsunami and Machine Learning as needed -->
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+				<h2 class="section-heading text-uppercase">Publications</h2>
+				<h3 class="section-subheading text-muted">PDF versions or links to open-access sources.
+            <a href="research-papers/list-of-publications.pdf"target="_blank">[Download list]</a></h3>
+            <!--<a href="https://github.com/Bantidi/research-papers/blob/master/list-of-publications.pdf"target="_blank">[Download list]</a></h3>-->
+			</div>
+		</div>
+
+        <h3>Peer Review Research Articles</h3>
+        <ul class="publication-list">
+            </p>
+			<p><img src="img/logos/oa-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Ishibe, B. Enescu, G. M. Tuluka, 2024. <a href="https://academic.oup.com/gji/article/239/2/882/7739188?login=false"target="_blank">Estimating spatio-temporal variable parameters of Epidemic Type Aftershock Sequence model in a region with limited seismic network coverage: a case study of the East African Rift System.</a> <em>Geophysical Journal International.</em> https://doi.org/10.1093/gji/ggae299.</p></div>
+			</p><br>
+			<p><img src="img/logos/oa-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, 2023. <a href="https://academic.oup.com/gji/article/234/2/1073/7083025"target="_blank">Effect of permanent stress on the time-dependent earthquake probability: implication for seismic hazard assessment in the African continent.</a> <em>Geophysical Journal International.</em> https://doi.org/10.1093/gji/ggad121.</p></div>
+			</p><br>
+			<p><img src="img/logos/oa-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, G. M. Tuluka, 2023. <a href="https://digitalcommons.usf.edu/siv/vol5/iss1/1/"target="_blank">Stochastic Modeling of the Eruption History of Nyiragongo Volcano in the Virunga Volcanic Province, Western Branch of the East African Rift System.</a> <em>Statistics in Volcanology.</em> https://doi.org/10.5038/2163-338X.5.1.</p></div>
+			</p><br>
+			<p><img src="img/logos/mail-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, 2022. <a href="https://link.springer.com/article/10.1007/s11600-022-00908-2"target="_blank"> Inter-occurrence time statistics of successive large earthquakes: analyses of the global CMT dataset.</a> <em> Acta Geophysica.</em> https://doi.org/10.1007/s11600-022-00908-2. <a href = "mailto:  tbantidi@gmail.com" target = "blank">[feel free to email me for reprints].</p></div>
+			</p><br>
+			<p><img src="img/logos/oa-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Nishimura, 2022. <a href="https://link.springer.com/article/10.1186/s40623-022-01677-4"target="_blank">Spatio-temporal clustering of successive earthquakes as inferred from analyses of global CMT and NIED F-net catalogs.</a> <em>Earth Planets and Space.</em> https://doi.org/10.1186/s40623-022-01677-4.</p></div>
+			</p><br>
+			</div> <br>
+			</p>
+            <!-- Add more publications -->
+        </ul>
+
+        <h3>Peer Reviewed News Articles</h3>
+        <ul class="publication-list">
+            <p><img src="img/logos/oa-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, 2023. <a href="https://temblor.net/temblor/igneous-activity-influences-faults-15495/"target="_blank">Old dike swarms could influence future fault ruptures.</a> <em>Temblor.</em> http://doi.org/10.32858/temblor.323.</p></div>
+			</p><br>
+			<p><img src="img/logos/oa-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, 2023. <a href="https://temblor.net/temblor/machine-learning-disaster-related-trauma-15308/"target="_blank">Machine learning approach for disaster-related trauma and subsequent functional limitations.</a> <em>Temblor.</em> http://doi.org/10.32858/temblor.311.</p></div>
+			</p><br>
+			</p>
+        </ul>
+
+        <h3>In Review</h3>
+        <ul class="publication-list">
+            <p><img src="img/logos/mail-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, at al., 20xx. <a href="https://xxx"target="_blank"> Seism.....</a> <em> xxxx Journal.</em> doi.xxxx. <a href = "mailto:  tbantidi@gmail.com" target = "blank">[feel free to email me for reprints].</p></div>
+			</p><br>
+        </ul>
+    </section>
+
+    <!-- Presentations Section -->
+    <section id="presentations">
+        <h2 class="section-heading text-uppercase">Presentations</h2>
+        <h3 class="section-subheading text-muted">List of some presentations.</h3>
+        <ul class="publication-list">
+            </p>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Ishibe, R.S. Matsu'ura, 2024. <a href="Bantidi_et_al._SSJ2024.pdf"target="_blank">Source of the 1755 Lisbon Earthquake: A Phenomenological Reconstruction Based on Historical Records and Tsunami Simulation.</a> <em>The 2024 Seismological Society of Japan Fall Meeting.</em> Toki Messe, Niigata, Japan.</em> [Oral].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Ishibe, R.S. Matsu'ura, 2024. <a href="Bantidi_et_al_JpGU2024.pdf"target="_blank">Reappraising the Generation Mechanism of the 1755 Lisbon Earthquake: Constraints from Historical Records and Tsunami Simulation.</a> <em>The 2024 Japan Geoscience Union Meeting.</em> Makuhari Messe, Chiba, Japan.</em> [Poster].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace">Ishibe T, T. Terakawa, A. Hashima, T.M. Bantidi, M. Mochizuki, R.S. Matsu’ura, 2024. <a href="Bantidi_et_al._JSAFS2023.pdf"target="_blank">The Method of Estimating Fault Slip Angles by Using Regional 3D Stress Field According to the Wallace-Bott Hypothesis for the Major Active Fault Zones ~ Effect of Uncertainties in Fault Geometry on the Estimated Rake Angles~.</a> <em>The 2023 Japanese Society for Active Fault Studies, Fall meeting.</em>Kyushu University Nishijin Plaza, Fukuoka, Japan.</em>[Oral].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Nishimura, 2021. <a href="Bantidi_et_al._SSJ2022.pdf"target="_blank">Spatio-temporal clustering of successive earthquakes: analyses of global CMT and F-net catalogue.</a> <em>The 2021 Seismological Society of Japan Fall Meeting.</em> Online.</em> [Oral].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Nishimura, 2020. <a href="Bantidi_et_al._JpGU_AGU2020.pdf"target="_blank">Spatio-temporal clustering of successive earthquakes in Japan: analyses of F-net catalogue.</a> <em>The 2020 Japanese Geoscience Union-American Geophysical Union (JpGU-AGU) joint meeting.</em> Online.</em> [iPoster].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Nishimura, 2019. <a href="Bantidi_et_al._AGU2019.pdf"target="_blank">Spatio-temporal clustering of successive earthquakes: data analyses of global data.</a> <em>The 2019 American Geophysical Union, Fall meeting.</em> Moscone center, San Francisco, USA.</em> [Oral].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Nishimura, 2019. <a href="Bantidi_et_al._SSJ2019.pdf"target="_blank">Spatio-temporal clustering of successive earthquakes in Japan: analyses of JMA catalogue. </a> <em>The 2019 Seismological Society of Japan Fall Meeting.</em> Kyoto University, Kyoto, Japan.</em> [Poster].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Nishimura, 2019. <a href="Bantidi_et_al_JpGU2019.pdf"target="_blank">Spatio-temporal clustering of successive earthquakes: data analyses of global data.</a> <em>The 2019 Japan Geoscience Union Meeting.</em> Makuhari Messe, Chiba, Japan.</em> [Poster].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, T. Nishimura, 2018. <a href="Bantidi_et_al_JpGU2019.pdf"target="_blank">Triggering and Coulomb stress interaction of Successive large earthquakes.</a> <em>The 2018 Japan Geoscience Union Meeting.</em> Makuhari Messe, Chiba, Japan.</em> [Oral].</p></div>
+			</p><br>
+			<p><img src="img/logos/pdf-link.png" float = "left" style="width:51px;margin-right:10px;margin-bottom:0px;float:left;vertical-align: bottom"> <div align="justify"><p style="font-family:'Share Tech Mono', monospace"><b>Bantidi, T. M.</b>, 2014. <a href="Bantidi_et_al_SST2014.pdf"target="_blank">Seismicity of the Democratic Republic of Congo and the plate tectonic theory.</a> <em>Semaine de la Science et des Technologies, Edition 2014.</em> Athénée de la Gombe, Kinshasa, DR Congo.</em> [Oral].</p></div>
+			</p><br>
+			</p>
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-heading text-uppercase">Gallery</h2>
+        <h3 class="section-subheading text-muted">Some field shots.</h3>
+        <div>
+            <img src="img/portfolio/gallery/DAS1.jpeg" alt="DAS1 1">
+            <p>Distributed acoustic sensing (DAS) system: volcanic earthquakes and subsurfaces characterization, Azuma volcano, Fukushima, Japan</p>
+        </div>
+        <div>
+            <img src="img/portfolio/gallery/SanAndrea2.jpeg" alt="SanAndrea2">
+            <p>San Andreas Fault, California, USA</p>
+        </div>
+        <div>
+            <img src="img/portfolio/gallery/Sakurajima.jpeg" alt="Sakurajima">
+            <p>Sakurajima volcano, Kagoshima, Japan</p>
+        </div>
+        
+    </section>
+
+    <!-- Contact -->
+  <section class="page-section" id="contact">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact me</h2>
+          <h3 class="section-subheading text-muted">Feel free to reach out.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+
+          <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfjENvGst9guMRYkPlh9K-SxdaOsfF7YIRkgs_OwV4A8OneZw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" name="entry.264535025" id="entry.264535025" placeholder="First name *" required="required" size="20">
+                    <input type="text" name="entry.750213373" id="entry.750213373" placeholder="Last name *" required="required" size="25">
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="entry.1156152921" id="entry.1156152921" placeholder="Your Email *" required="required"  size="20" data-validation-required-message="Please enter your email address.">
+                  <input type="text" name="entry.284769138" id="entry.284769138" placeholder="Organisation" size="25">
+
+                </div>
+                <!--<div class="form-group">
+                  <input type="text" name="entry.284769138" id="entry.284769138" placeholder="Organisation">
+                  <p class="help-block text-danger"></p>
+                </div>-->
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" name="entry.1465719965" id="entry.1465719965" placeholder="Your message *" required="required" size="50" height="30px;">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" onclick="this.innerHTML='Thank you for your message'">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>-->
+
+  </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv-section">
+        <h2>My CV</h2>
+        <a href="Bantidi_CV.pdf" download>Download CV</a>
+    </section>
+	
+<!-- JavaScript for Slideshow -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slideshow-container img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Start the slideshow loop
+        setInterval(nextSlide, 10000); // 10 seconds for each slide
+    </script>
+</body>
+</html>
