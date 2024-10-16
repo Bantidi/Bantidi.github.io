@@ -97,6 +97,25 @@
 			margin-left: auto;
 			text-align: left;
 		}
+		
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+			height: 300px; /* Should be removed. Only for demonstration */
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
 				
     
 	.fill {object-fit: fill;}
@@ -166,12 +185,12 @@
 
         <div class="portfolio-caption">
             <h3>[1] Seismicity, earthquake triggering and interaction</h3>
-			<div class="two-panel">
-				<div class="panel">
+			<div class="row">
+				<div class="column">
 					<img src="img/portfolio/Triggeringdistance.png" alt="Seismicity, earthquake triggering and interaction" style="width:650px;height:350px">
 					<p>Bantidi and Nishimura, EPS, (2022).</p>
 				</div>
-				<div class="panel">
+				<div class="column">
 					<p>Seismicity measures the occurrence frequency of earthquakes in space, time, and magnitude. While earthquake triggering refers to the process by which earthquakes nucleate, the interactions involved in this process, and the resulting consequences for time-dependent hazards. By combining physics-based models (e.g., rate and state friction law) with statistical earthquake models (e.g., the Epidemic Type Aftershock Sequence (ETAS) model), we can achieve more accurate forecasts for earthquake probabilities in both space and time.</p>
 					<a href="#" class="blue-btn">Learn More</a>	
 				</div>
